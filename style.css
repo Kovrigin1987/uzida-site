@@ -1,4 +1,5 @@
 
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,25 +8,31 @@ body {
   background-color: #f5f9ff;
   color: #222;
 }
-
 header {
   background-color: #00487c;
   color: white;
   padding: 20px;
   text-align: center;
 }
-
 section {
   padding: 20px;
 }
-
 h2 {
   color: #00487c;
 }
-
 footer {
   background-color: #eee;
   padding: 10px;
   text-align: center;
   font-size: 0.9em;
+}
+.lang-switcher {
+  background: #eee;
+  text-align: right;
+  padding: 8px 15px;
+}
+.lang-switcher button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
 }
