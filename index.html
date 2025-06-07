@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,35 +7,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Uzbekistan Infectious Disease Association</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .lang-switcher { text-align: right; padding: 10px; }
+    .lang-switcher button { margin-left: 5px; }
+    .lang { display: none; }
+    .lang.active { display: block; }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Uzbekistan Infectious Disease Association</h1>
-    <p>Uniting experts in infection control, public health, and clinical practice.</p>
-  </header>
+  <div class="lang-switcher">
+    <button onclick="setLang('en')">EN</button>
+    <button onclick="setLang('uz')">UZ</button>
+    <button onclick="setLang('ru')">RU</button>
+  </div>
 
-  <section>
-    <h2>About Us</h2>
-    <p>We are a professional initiative of physicians, researchers, and public health experts working to improve infectious disease prevention and control in Uzbekistan.</p>
-  </section>
+  <div class="lang en active">
+    <header><h1>Uzbekistan Infectious Disease Association</h1>
+    <p>Uniting experts in infection control, public health, and clinical practice.</p></header>
+    <section><h2>About Us</h2>
+    <p>We are a professional initiative of physicians, researchers, and public health experts working to improve infectious disease prevention and control in Uzbekistan.</p></section>
+    <section><h2>Our Goals</h2>
+    <ul><li>Advance infection diagnostics and care</li><li>Collaborate on clinical and scientific research</li><li>Raise awareness and education in public health</li></ul></section>
+    <section><h2>Join Us</h2>
+    <p>If you're a medical professional or researcher, we invite you to join our network. Contact us at uzidassociation@gmail.com.</p></section>
+  </div>
 
-  <section>
-    <h2>Our Goals</h2>
-    <ul>
-      <li>Advance infection diagnostics and care</li>
-      <li>Collaborate on clinical and scientific research</li>
-      <li>Raise awareness and education in public health</li>
-    </ul>
-  </section>
+  <div class="lang uz">
+    <header><h1>Oʻzbekiston infeksion kasalliklar assotsiatsiyasi</h1>
+    <p>Infeksiyalarni nazorat qilish, sogʻliqni saqlash va ilmiy hamkorlik yoʻnalishida mutaxassislarni birlashtiramiz.</p></header>
+    <section><h2>Biz haqimizda</h2>
+    <p>Biz — Oʻzbekistonda infeksion kasalliklarni oldini olish va davolashni yaxshilashga qaratilgan shifokorlar va olimlarning tashabbuskor guruhi.</p></section>
+    <section><h2>Maqsadlarimiz</h2>
+    <ul><li>Infeksiyalarni tashxislash va davolashni rivojlantirish</li><li>Ilmiy va klinik hamkorlik</li><li>Aholining sogʻliqni saqlash savodxonligini oshirish</li></ul></section>
+    <section><h2>Bizga qoʻshiling</h2>
+    <p>Agar siz shifokor yoki olim boʻlsangiz, bizning tarmogʻimizga qoʻshiling. Bogʻlanish: uzidassociation@gmail.com</p></section>
+  </div>
 
-  <section>
-    <h2>Join Us</h2>
-    <p>If you're a medical professional or researcher, we invite you to join our network. Contact us at uzidassociation@gmail.com.</p>
-  </section>
+  <div class="lang ru">
+    <header><h1>Ассоциация инфекционистов Узбекистана</h1>
+    <p>Объединяем специалистов по контролю инфекций, общественному здравоохранению и клинической практике.</p></header>
+    <section><h2>О нас</h2>
+    <p>Мы — инициативная группа врачей и исследователей, стремящихся улучшить профилактику и контроль инфекционных заболеваний в Узбекистане.</p></section>
+    <section><h2>Наши цели</h2>
+    <ul><li>Совершенствовать диагностику и лечение инфекций</li><li>Развивать научное и клиническое сотрудничество</li><li>Повышать осведомлённость населения</li></ul></section>
+    <section><h2>Присоединяйтесь</h2>
+    <p>Если вы врач или исследователь — присоединяйтесь к нам. Контакт: uzidassociation@gmail.com</p></section>
+  </div>
 
-  <footer>
-    <p>Contact: uzidassociation@gmail.com</p>
-    <p>&copy; 2025 Uzbekistan Infectious Disease Association</p>
-  </footer>
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+      document.querySelector('.lang.' + lang).classList.add('active');
+    }
+  </script>
 </body>
 </html>
+
