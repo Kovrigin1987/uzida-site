@@ -327,107 +327,67 @@ We are proud to uphold strict membership requirements aligned with international
           </div>
      </section>
 
-
-   <!-- Apply for Membership -->
-<section id="appointment" data-stellar-background-ratio="3">
+<section id="appointment" style="padding: 40px 0;">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-sm-6">
-       <div class="text-content wow fadeInUp" data-wow-delay="0.4s" style="padding: 20px; background-color: #f9f9f9; border-radius: 8px;">
-  <h3>Minimum Requirements for Membership</h3>
-  <ul style="padding-left: 20px;">
-    <li>1. At least 3 publications in peer-reviewed journals (e.g., indexed in Scopus, Web of Science, or approved by the Higher Attestation Commission (HAC))</li>
-    <li>2. Master’s degree or residency in Infectious Diseases, Epidemiology, or Phthisiology "Pulmonologist"</li>
-    <li>3. Participation in at least one scientific or clinical conference (regional or international)</li>
-    <li>4. Completed application form with valid contact information</li>
-  </ul>
-  <p style="margin-top: 10px;"><strong>Note:</strong> Note: Only highly qualified professionals whose credentials meet international academic and clinical standards are accepted. Applications are strictly reviewed by an expert board of physicians, and only those meeting all requirements receive membership certification.</p>
-	 <p style="margin-top: 10px;"><strong></strong> Once we receive your submission, you will be sent our official charter and a complete step-by-step guide on how to proceed with your membership application. Our team will assist you throughout the process to ensure all requirements are clearly understood and met.</p>
-</div>       
-</div>
+
+      <!-- Left: Membership Requirements -->
+      <div class="col-md-6">
+        <div style="padding: 20px; background-color: #f9f9f9; border-radius: 8px;">
+          <h3>Minimum Requirements for Membership</h3>
+          <ul style="padding-left: 20px;">
+            <li>1. At least 3 publications in peer-reviewed journals</li>
+            <li>2. Master’s degree or residency in Infectious Diseases, Epidemiology, or Pulmonology</li>
+            <li>3. Participation in at least one scientific or clinical conference</li>
+            <li>4. Completed application form with valid contact information</li>
+          </ul>
+          <p><strong>Note:</strong> Only highly qualified professionals whose credentials meet international academic and clinical standards are accepted.</p>
+          <p>Once we receive your submission, you will get our official charter and detailed instructions. Our team will assist throughout the process.</p>
+        </div>
       </div>
 
-      <div class="col-md-6 col-sm-6">
-        <!-- CONTACT FORM HERE -->
-        <form
-          id="appointment-form"
-          role="form"
-          method="POST"
-          action="https://formspree.io/f/xwpbljjw"
-        >
-          <!-- SECTION TITLE -->
-          <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
-            <h2>Apply for Membership</h2>
+      <!-- Right: Application Form -->
+      <div class="col-md-6">
+        <form action="https://formspree.io/f/xwpbljjw" method="POST" style="background-color:#fff; padding: 20px; border-radius: 8px;">
+          <h3>Apply for Membership</h3>
+          <div class="mb-3">
+            <label for="name">Full Name</label>
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
           </div>
-
-          <div class="wow fadeInUp" data-wow-delay="0.8s">
-            <div class="col-md-6 col-sm-6">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                name="name"
-                placeholder="Full Name"
-                required
-              />
-            </div>
-
-            <div class="col-md-6 col-sm-6">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                name="email"
-                placeholder="Your Email"
-                required
-              />
-            </div>
-
-            <div class="col-md-6 col-sm-6">
-              <label for="department">Select your specialisation</label>
-              <select class="form-control" name="department">
-                <option>infectious disease specialists</option>
-                <option>epidemiologists</option>
-                <option>phthisiologists "pulmonologist"</option>
-              </select>
-            </div>
-
-            <div class="col-md-12 col-sm-12">
-              <label for="phone">Phone Number</label>
-              <input
-                type="tel"
-                class="form-control"
-                id="phone"
-                name="phone"
-                placeholder="Phone"
-              />
-              <label for="message">Additional Message</label>
-              <textarea
-                class="form-control"
-                rows="5"
-                id="message"
-                name="message"
-                placeholder="Message"
-              ></textarea>
-              <button
-                type="submit"
-                class="form-control"
-                id="cf-submit"
-                name="submit"
-              >
-                Submit
-              </button>
-            </div>
+          <div class="mb-3">
+            <label for="email">Email</label>
+            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
           </div>
+          <div class="mb-3">
+            <label for="department">Specialisation</label>
+            <select name="department" class="form-control" required>
+              <option>Infectious Disease Specialist</option>
+              <option>Epidemiologist</option>
+              <option>Phthisiologist (Pulmonologist)</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" class="form-control" placeholder="Your Phone">
+          </div>
+          <div class="mb-3">
+            <label for="message">Additional Message</label>
+            <textarea name="message" rows="4" class="form-control" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-success w-100">Submit</button>
         </form>
       </div>
+
     </div>
   </div>
 </section>
 
 
+
+
+
+
+	
      <!-- GOOGLE MAP -->
      <section id="google-map">
      <!-- How to change your own map point
